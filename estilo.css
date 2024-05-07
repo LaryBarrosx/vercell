@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+
+}
+
+.botao__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 34px;
+    padding-right: 34px;
+    border-bottom: 0.5px solid #8a2be2;
+}
+
+.botao__imagem {
+    width: 32px;
+    height: 72px;
+}
+
+.botao__menu {
+    display: flex;
+    gap: 45px;
+    font-size: 22px;
+}
+
+.botao__menu__link {
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 34px;
+}
+
+.botao__menu__link:hover {
+    color: #8a2be2;
+    transition: 0.3s all;
+}
+
+.titulo {
+    color: #fff;
+    font-size: 44px;
+    margin:2rem;
+    padding: 1.5rem;
+}
+
+.titulo__h2 {
+    color: #fff;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #000;
+    width: 250px;
+    height: 350px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #8a2be2;
+    gap: 4px;
+    transition: 0, 7s;
+}
+
+.card:hover {
+    height: 400px;
+}
+
+.card>img {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card h1 {
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    ;
+}
+
+.card h2 {
+    font-size: .9rem;
+    color: #aaaa;
+}
+
+.card__botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8a2be2;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 80%;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    gap: 2rem;
+    transition: 0.3s ease;
+
+}
+
+.card__botao:hover {
+    background-color: rebeccapurple;
+
+}
+
+.rodape {
+    padding: 7px;
+    background-color: #272727;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:800px) {
+    .botao {
+        padding: 10%;
+    }
+
+    .botao__menu {
+        justify-content: center;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+}
